@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Calendar } from 'lucide-react';
 import type { Article } from '@/types';
+import { resolveImageSrc } from '@/lib/resolve-image';
 
 interface ArticleCardProps {
   article: Article;
@@ -24,7 +25,7 @@ export default function ArticleCard({ article, showImage = true }: ArticleCardPr
         {showImage && (
           <div className="aspect-video w-full overflow-hidden bg-muted">
             <img
-              src={article.cover_image}
+              src={resolveImageSrc(article.cover_image)}
               alt={article.title}
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />

@@ -5,6 +5,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { getArticleById } from '@/db/api';
 import type { Article } from '@/types';
 import { Calendar, ArrowLeft } from 'lucide-react';
+import { resolveImageSrc } from '@/lib/resolve-image';
 
 export default function ArticleDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -89,7 +90,7 @@ export default function ArticleDetailPage() {
 
           <div className="aspect-video w-full overflow-hidden rounded-lg mb-8 bg-muted">
             <img
-              src={article.cover_image}
+              src={resolveImageSrc(article.cover_image)}
               alt={article.title}
               className="w-full h-full object-cover"
             />

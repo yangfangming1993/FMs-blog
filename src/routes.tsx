@@ -2,6 +2,7 @@ import HomePage from './pages/HomePage';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticleDetailPage from './pages/ArticleDetailPage';
 import AboutPage from './pages/AboutPage';
+import PregnancyDiaryPage from './pages/PregnancyDiaryPage';
 import type { ReactNode } from 'react';
 
 interface RouteConfig {
@@ -21,6 +22,11 @@ const routes: RouteConfig[] = [
     name: '文章列表',
     path: '/articles',
     element: <ArticleListPage />
+  },
+  {
+    name: '孕期日记',
+    path: '/pregnancy-diary',
+    element: <PregnancyDiaryPage />
   },
   {
     name: '文章详情',

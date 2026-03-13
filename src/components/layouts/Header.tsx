@@ -50,6 +50,13 @@ export default function Header() {
               <Link to="/articles">文章列表</Link>
             </Button>
             <Button
+              variant={isActive('/pregnancy-diary') ? 'default' : 'ghost'}
+              className="text-sm md:text-base"
+              asChild
+            >
+              <Link to="/pregnancy-diary">孕期日记</Link>
+            </Button>
+            <Button
               variant={isActive('/about') ? 'default' : 'ghost'}
               className="text-sm md:text-base"
               asChild
