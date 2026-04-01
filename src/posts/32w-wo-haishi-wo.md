@@ -3,7 +3,7 @@ id: "32w-wo-haishi-wo"
 title: "32w，我还是我"
 summary: "人还是要保持持续学习"
 date: "2025-03-12"
-cover: "/images/covers/default.svg"
+cover: "default.svg"
 ---
 
 人还是要保持持续学习。

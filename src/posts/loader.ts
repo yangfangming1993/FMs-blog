@@ -13,7 +13,7 @@ type ParsedPost = {
   content: string;
 };
 
-const DEFAULT_COVER = "/images/covers/default.svg";
+const DEFAULT_COVER = "default.svg";
 
 // 所有文章文件列表（在 src/posts 目录下）
 const POST_FILES = [
